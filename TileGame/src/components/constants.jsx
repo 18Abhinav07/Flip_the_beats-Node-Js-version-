@@ -1,0 +1,1 @@
+export const pairs = 6;
