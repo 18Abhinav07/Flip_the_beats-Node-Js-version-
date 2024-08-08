@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -9,7 +11,7 @@ app.use(bodyParser.json());
 app.use(cors()); // Enable CORS
 
 // MongoDB Connection
-const mongoURI = 'mongodb+srv://abhinavpangaria2003:xabRDitk0IVQMa0o@cluster0.yo9pc.mongodb.net';
+const mongoURI = process.env.MONGODB_URI;
 mongoose.connect(mongoURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
