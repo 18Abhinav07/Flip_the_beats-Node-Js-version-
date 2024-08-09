@@ -4,8 +4,8 @@ import Dashboard from './components/Dashboard';
 import axios from 'axios';
 import { pairs } from './components/constants';
 
-// const backend = "https://flip-the-beats-node-js-version.onrender.com";
-const backend = "http://127.0.0.1:3000"
+const backend = "https://flip-the-beats-node-js-version.onrender.com";
+// const backend = "http://127.0.0.1:3000"
 
 const TOTAL_PAIRS = pairs; // Assuming we have 6 pairs of tiles
 
